@@ -47,7 +47,7 @@ getProfile <- function(token, connections=FALSE, id=NULL, partner = 0)
   
   
   base_url <- "https://api.linkedin.com/v1/people/"
-  profile_fields <- ":(id,first-name,last-name,formatted-name,location:(name),headline,industry,num-connections,summary,specialties,positions,public-profile-url)"
+  profile_fields <- ":(id,first-name,last-name,maiden-name,formatted-name,phonetic-first-name,phonetic-last-name,formatted-phonetic-name,location,headline,industry,current-share,num-connections,num-connections-capped,summary,specialties,positions,picture-url,picture-urls::(original),site-standard-profile-request,api-standard-profile-request,public-profile-url)"
   
   # if connections=FALSE && id=NULL:
   # This will return all basic profile information about yourself
